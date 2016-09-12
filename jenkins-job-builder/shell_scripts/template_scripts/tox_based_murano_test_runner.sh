@@ -2,7 +2,7 @@ set +e
 
 source /home/jenkins/openrc
 
-if [ "$APPS_FROM_REPO" = "TRUE" ] ; then
+if [ "$APPS_FROM_CATALOG" = "TRUE" ] ; then
     murano bundle-import --is-public --exists-action s container-based-apps
     sleep 3m
 else

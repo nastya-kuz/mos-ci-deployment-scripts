@@ -69,7 +69,6 @@
     name: docker_k8s_apps_from_catalog
     weight: 1
     env_changer: _murano_baremetal
-    env_inject_file: env_inject_murano_baremetal.properties
     config_path: templates/murano_baremetal/default.yaml
     start_timer: "0 5 * * 3,7"
     node: Slave-srv140
@@ -93,7 +92,6 @@
     name: docker_k8s_apps_from_repo
     weight: 1
     env_changer: _murano_baremetal
-    env_inject_file: env_inject_murano_baremetal.properties
     config_path: templates/murano_baremetal/default.yaml
     start_timer: "0 17 * * *"
     node: Slave-srv140
